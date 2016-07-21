@@ -1,0 +1,55 @@
+[21-Jul-2016 03:39:26 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 35
+[21-Jul-2016 03:39:26 UTC] PHP Stack trace:
+[21-Jul-2016 03:39:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/plugins.php:0
+[21-Jul-2016 03:39:26 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/plugins.php:10
+[21-Jul-2016 03:39:26 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[21-Jul-2016 03:39:26 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Jul-2016 03:39:26 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[21-Jul-2016 03:47:42 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 87
+[21-Jul-2016 03:47:42 UTC] PHP Stack trace:
+[21-Jul-2016 03:47:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[21-Jul-2016 03:47:42 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[21-Jul-2016 03:47:42 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Jul-2016 03:47:42 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[21-Jul-2016 03:48:22 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 126
+[21-Jul-2016 03:48:22 UTC] PHP Stack trace:
+[21-Jul-2016 03:48:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/options-general.php:0
+[21-Jul-2016 03:48:22 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/options-general.php:10
+[21-Jul-2016 03:48:22 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[21-Jul-2016 03:48:22 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Jul-2016 03:48:22 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[21-Jul-2016 03:48:48 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 125
+[21-Jul-2016 03:48:48 UTC] PHP Stack trace:
+[21-Jul-2016 03:48:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/options-general.php:0
+[21-Jul-2016 03:48:48 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/options-general.php:10
+[21-Jul-2016 03:48:48 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[21-Jul-2016 03:48:48 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Jul-2016 03:48:48 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[21-Jul-2016 03:49:35 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 87
+[21-Jul-2016 03:49:35 UTC] PHP Stack trace:
+[21-Jul-2016 03:49:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/options-general.php:0
+[21-Jul-2016 03:49:35 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/options-general.php:10
+[21-Jul-2016 03:49:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[21-Jul-2016 03:49:35 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Jul-2016 03:49:35 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[21-Jul-2016 03:50:58 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 126
+[21-Jul-2016 03:50:58 UTC] PHP Stack trace:
+[21-Jul-2016 03:50:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/options-general.php:0
+[21-Jul-2016 03:50:58 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/options-general.php:10
+[21-Jul-2016 03:50:58 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[21-Jul-2016 03:50:58 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Jul-2016 03:50:58 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[21-Jul-2016 03:51:16 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 88
+[21-Jul-2016 03:51:16 UTC] PHP Stack trace:
+[21-Jul-2016 03:51:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/options-general.php:0
+[21-Jul-2016 03:51:16 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/options-general.php:10
+[21-Jul-2016 03:51:16 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[21-Jul-2016 03:51:16 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Jul-2016 03:51:16 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[21-Jul-2016 03:51:30 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 88
+[21-Jul-2016 03:51:30 UTC] PHP Stack trace:
+[21-Jul-2016 03:51:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/options-general.php:0
+[21-Jul-2016 03:51:30 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/options-general.php:10
+[21-Jul-2016 03:51:30 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[21-Jul-2016 03:51:30 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Jul-2016 03:51:30 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
