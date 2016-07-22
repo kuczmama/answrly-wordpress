@@ -8,6 +8,13 @@
     Author URI: https://www.answrly.com
 */
 ?>
+<style type="text/css">
+	.section-header{
+		text-align: center;
+		font-weight: 900;
+	}
+</style>
+ 
  
  <?php
 class Answrly extends WP_Widget {
@@ -27,9 +34,7 @@ class Answrly extends WP_Widget {
 		echo "Write a question to " . $instance['username'];
 		?>
 		<form method="post" id='question-form'>
-			<textarea form='question-form' name='question'>
-Ask a question!
-			</textarea>
+			<textarea form='question-form' name='question' placeholder='Ask a question...' ></textarea>
     		<input type="submit" value="click" name="submit"> <!-- assign a name for the button -->
 		</form>
 		
@@ -41,8 +46,10 @@ Ask a question!
 		if(isset($_POST['submit']))
 		{
 			$data = array(
+				"question[user_id]" => $_POST['user_id'],
 				"question[body]"  => $_POST['question'],
-				"question[expert_id]" => $instance['user_id']
+				"question[expert_id]" => $instance['expert_id'],
+				"question[price]" => ((int)$instance['price'] * 100)
 			);
 			display(curl('https://www.answrly.com/questions', $data));
 		}
@@ -53,6 +60,7 @@ Ask a question!
 		
 		$instance['username'] = ( ! empty( $new_instance['username'] ) ) ? strip_tags( $new_instance['username'] ) : '';
 		$instance['password'] = ( ! empty( $new_instance['password'] ) ) ? strip_tags( $new_instance['password'] ) : '';
+		$instance['price'] = ( ! empty( $new_instance['price'] ) ) ? strip_tags( $new_instance['price'] ) : '';
 		$data = array(
 			"user[username]"  => $instance['username'],
 			"user[password]" => $instance['password']
@@ -61,8 +69,9 @@ Ask a question!
 		
 		if(is_json($instance['json'], FALSE)){
 			$json = json_decode($instance['json']);
-			$instance['user_id'] = $json->{'id'};
+			$instance['expert_id'] = $json->{'id'};
 			$instance['username'] = $json->{'username'};
+
 		}
 		
 		return $instance;
@@ -73,6 +82,9 @@ Ask a question!
 		?>
 		<div style="color: #ff0000; font-weight: 900;text-align: center;">
 			<?php echo !is_json($instance['json']) ? $instance['json'] : ''; ?>
+		</div>
+		<div class="section-header">
+			Answrly.com Account Info
 		</div>
 		<?php
 		// Username
@@ -86,7 +98,7 @@ Ask a question!
 			class="widefat" 
 			id="<?php echo esc_attr( $this->get_field_id( 'username' ) ); ?>"
 			name="<?php echo esc_attr( $this->get_field_name( 'username' ) ); ?>"
-			type="text" 
+			type="text"
 			value="<?php echo esc_attr( $username ); ?>">
 		<?php
 		//Password
@@ -102,6 +114,20 @@ Ask a question!
 			name="<?php echo esc_attr( $this->get_field_name( 'password' ) ); ?>"
 			type="password" 
 			value="<?php echo esc_attr( $password ); ?>">
+		<div class='section-header'>
+			Question Options
+		</div>
+			<label 
+			for="<?php echo esc_attr( $this->get_field_id( 'price' ) ); ?>">
+			<?php _e( esc_attr( 'Price: (dollars)' ) ); ?>
+		</label> 
+		<input 
+			class="widefat" 
+			id="<?php echo esc_attr( $this->get_field_id( 'price' ) ); ?>"
+			name="<?php echo esc_attr( $this->get_field_name( 'price' ) ); ?>"
+			type="number"
+			onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+			value="<?php echo (! empty( $instance['price'] ) ) ? esc_attr( $instance['price'] ) : 25; ?>">
 		<?php
 	}
 }
