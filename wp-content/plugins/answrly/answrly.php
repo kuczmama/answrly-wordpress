@@ -13,6 +13,16 @@
 		text-align: center;
 		font-weight: 900;
 	}
+	
+	.error-message {
+		color: #ff0000;
+		font-weight: 900;
+		text-align: center;
+	}
+	
+	.center-text {
+		text-align: center;
+	}
 </style>
  
  
@@ -30,28 +40,58 @@ class Answrly extends WP_Widget {
 
 	function widget( $args, $instance ) {
 		// Widget output
-		
-		echo "Write a question to " . $instance['username'];
 		?>
+		<div class='center-text'>
+			Ask <?php echo $instance['username'] ?> with your 
+			<a href='https://www.answrly.com/signup'>answrly</a>
+			account.
+		</div>
+		<div id="error-message" class='error-message'><!-- Display the error message --></div>
 		<form method="post" id='question-form'>
-			<textarea form='question-form' name='question' placeholder='Ask a question...' ></textarea>
-    		<input type="submit" value="click" name="submit"> <!-- assign a name for the button -->
+			<p><textarea form='question-form' name='question' placeholder='Ask a question...' ></textarea></p>
+			<p><input type='text' name='username' placeholder='username' class="widefat"  /></p>
+			<p><input type='password' name='password' placeholder='password' class="widefat"  /></p>
+    		<input type="submit" value="Ask" name="submit">
 		</form>
 		
 		<?php
+		function display_error($err){
+		?>
+			<script type='text/javascript'>
+				document.getElementById ("error-message"). innerHTML = "<?php echo $err; ?>";
+			</script>
+		<?php
+			
+		}
+		
 		function display($result)
 		{
     		echo $result;
 		}
 		if(isset($_POST['submit']))
 		{
-			$data = array(
-				"question[user_id]" => $_POST['user_id'],
-				"question[body]"  => $_POST['question'],
-				"question[expert_id]" => $instance['expert_id'],
-				"question[price]" => ((int)$instance['price'] * 100)
+			// Get user data
+			$user_data = array(
+				"user[username]"  => $_POST['username'],
+				"user[password]" => $_POST['password']
 			);
-			display(curl('https://www.answrly.com/questions', $data));
+			$user_json = curl('https://www.answrly.com/get_user', $user_data);
+
+			if(is_json($user_json, FALSE)){
+				$decoded_user_json = json_decode($user_json);
+				$instance['user_id'] = $decoded_user_json->{'id'};
+				display($instance['user_id']);
+				// Create question
+				$data = array(
+					"question[user_id]" => $instance['user_id'],
+					"question[body]"  => $_POST['question'],
+					"question[expert_id]" => $instance['expert_id'],
+					"question[price]" => ((int)$instance['price'] * 100)
+				);
+				curl('https://www.answrly.com/questions', $data);
+			} else {
+				display_error($user_json);
+			}
 		}
 	}
 
@@ -80,11 +120,11 @@ class Answrly extends WP_Widget {
 	function form( $instance ) {
 		//Title
 		?>
-		<div style="color: #ff0000; font-weight: 900;text-align: center;">
-			<?php echo !is_json($instance['json']) ? $instance['json'] : ''; ?>
-		</div>
 		<div class="section-header">
 			Answrly.com Account Info
+		</div>
+		<div class="error-message">
+			<?php echo !is_json($instance['json']) ? $instance['json'] : ''; ?>
 		</div>
 		<?php
 		// Username
@@ -133,7 +173,9 @@ class Answrly extends WP_Widget {
 }
 function is_json($string,$return_data = false) {
 	$data = json_decode($string);
-	return (json_last_error() == JSON_ERROR_NONE) ? ($return_data ? $data : TRUE) : FALSE;
+	return (json_last_error() == JSON_ERROR_NONE) ?
+		($return_data ?
+			$data : TRUE) : FALSE;
 }
 
 function curl($url, $data){
