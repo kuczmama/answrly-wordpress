@@ -49,8 +49,6 @@ class Answrly extends WP_Widget {
 		<div id="error-message" class='error-message'><!-- Display the error message --></div>
 		<form method="post" id='question-form'>
 			<p><textarea form='question-form' name='question' placeholder='Ask a question...' ></textarea></p>
-			<p><input type='text' name='username' placeholder='username' class="widefat"  /></p>
-			<p><input type='password' name='password' placeholder='password' class="widefat"  /></p>
     		<input type="submit" value="Ask" name="submit">
 		</form>
 		
@@ -64,34 +62,24 @@ class Answrly extends WP_Widget {
 			
 		}
 		
-		function display($result)
-		{
-    		echo $result;
+		function display($str) {
+    		preg_match('#[-a-zA-Z0-9@:%_\+.~\#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~\#?&//=]*)?#si', $str, $matches);
+ 		    //echo "<script type='text/javascript'> window.location.href ="  . $matches[0] .";";
+ 		    ?>
+ 		    <script>
+ 		    	window.location.href = "<?php echo $matches[0]; ?>";
+ 		    </script>
+ 		    <?php
 		}
-		if(isset($_POST['submit']))
-		{
-			// Get user data
-			$user_data = array(
-				"user[username]"  => $_POST['username'],
-				"user[password]" => $_POST['password']
+		
+		if(isset($_POST['submit'])) {
+			// Create question
+			$data = array(
+				"question[body]"  => $_POST['question'],
+				"question[expert_id]" => $instance['expert_id'],
+				"question[price]" => ((int)$instance['price'] * 100)
 			);
-			$user_json = curl('https://www.answrly.com/get_user', $user_data);
-
-			if(is_json($user_json, FALSE)){
-				$decoded_user_json = json_decode($user_json);
-				$instance['user_id'] = $decoded_user_json->{'id'};
-				display($instance['user_id']);
-				// Create question
-				$data = array(
-					"question[user_id]" => $instance['user_id'],
-					"question[body]"  => $_POST['question'],
-					"question[expert_id]" => $instance['expert_id'],
-					"question[price]" => ((int)$instance['price'] * 100)
-				);
-				curl('https://www.answrly.com/questions', $data);
-			} else {
-				display_error($user_json);
-			}
+			display(curl('https://www.answrly.com/questions', $data));
 		}
 	}
 
@@ -107,7 +95,7 @@ class Answrly extends WP_Widget {
 		);
 		$instance['json'] = curl('https://www.answrly.com/get_user', $data);
 		
-		if(is_json($instance['json'], FALSE)){
+		if(is_json($instance['json'], FALSE)) {
 			$json = json_decode($instance['json']);
 			$instance['expert_id'] = $json->{'id'};
 			$instance['username'] = $json->{'username'};
@@ -194,6 +182,7 @@ function curl($url, $data){
 	curl_close($curl);
 	return $resp;
 }
+
 function myplugin_register_widgets() {
 	register_widget( 'Answrly' );
 }
