@@ -20,8 +20,15 @@
 		text-align: center;
 	}
 	
-	.center-text {
+	.align-right {
 		text-align: center;
+		float: right;
+	}
+	
+	.align-middle {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
 	}
 </style>
  
@@ -40,38 +47,21 @@ class Answrly extends WP_Widget {
 
 	function widget( $args, $instance ) {
 		// Widget output
+		$title = apply_filters( 'widget_title', ( ! empty( $instance['widget_title'] ) ) ? strip_tags( $instance['widget_title'] ) : __("Ask me a question") );
+		// before and after widget arguments are defined by themes
+		echo $args['before_widget'];
+		if ( ! empty( $title ) ) {
+			echo $args['before_title'] . $title . $args['after_title'];
+		}
+
 		?>
-		<div class='center-text'>
-			Ask <?php echo $instance['username'] ?> with your 
-			<a href='https://www.answrly.com/signup'>answrly</a>
-			account.
-		</div>
 		<div id="error-message" class='error-message'><!-- Display the error message --></div>
 		<form method="post" id='question-form'>
-			<p><textarea form='question-form' name='question' placeholder='Ask a question...' ></textarea></p>
+			<textarea form='question-form' name='question' placeholder='Ask a question...' ></textarea>
     		<input type="submit" value="Ask" name="submit">
+    		<small>Become an <a href='https://www.answrly.com/expert_signup'>answrly affiliate</a></small>
 		</form>
-		
 		<?php
-		function display_error($err){
-		?>
-			<script type='text/javascript'>
-				document.getElementById ("error-message"). innerHTML = "<?php echo $err; ?>";
-			</script>
-		<?php
-			
-		}
-		
-		function display($str) {
-    		preg_match('#[-a-zA-Z0-9@:%_\+.~\#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~\#?&//=]*)?#si', $str, $matches);
- 		    //echo "<script type='text/javascript'> window.location.href ="  . $matches[0] .";";
- 		    ?>
- 		    <script>
- 		    	window.location.href = "<?php echo $matches[0]; ?>";
- 		    </script>
- 		    <?php
-		}
-		
 		if(isset($_POST['submit'])) {
 			// Create question
 			$data = array(
@@ -81,12 +71,14 @@ class Answrly extends WP_Widget {
 			);
 			display(curl('https://www.answrly.com/questions', $data));
 		}
+		echo $args['after_widget'];
 	}
 
 	function update( $new_instance, $old_instance ) {
 		$instance = array();
 		
 		$instance['username'] = ( ! empty( $new_instance['username'] ) ) ? strip_tags( $new_instance['username'] ) : '';
+		$instance['widget_title'] = ( ! empty( $new_instance['widget_title'] ) ) ? strip_tags( $new_instance['widget_title'] ) : '';
 		$instance['password'] = ( ! empty( $new_instance['password'] ) ) ? strip_tags( $new_instance['password'] ) : '';
 		$instance['price'] = ( ! empty( $new_instance['price'] ) ) ? strip_tags( $new_instance['price'] ) : '';
 		$data = array(
@@ -116,7 +108,7 @@ class Answrly extends WP_Widget {
 		</div>
 		<?php
 		// Username
-		$username = ! empty( $instance['username'] ) ? $instance['username'] : __( 'Username', 'text_domain' );
+		$username = ! empty( $instance['username'] ) ? $instance['username'] : '';
 		?>
 		<label 
 			for="<?php echo esc_attr( $this->get_field_id( 'username' ) ); ?>">
@@ -130,7 +122,7 @@ class Answrly extends WP_Widget {
 			value="<?php echo esc_attr( $username ); ?>">
 		<?php
 		//Password
-		$password = ! empty( $instance['password'] ) ? $instance['password'] : __( 'password', 'text_domain' );
+		$password = ! empty( $instance['password'] ) ? $instance['password'] : '';
 		?>
 		<label 
 			for="<?php echo esc_attr( $this->get_field_id( 'password' ) ); ?>">
@@ -142,10 +134,11 @@ class Answrly extends WP_Widget {
 			name="<?php echo esc_attr( $this->get_field_name( 'password' ) ); ?>"
 			type="password" 
 			value="<?php echo esc_attr( $password ); ?>">
+			<!-- Option -->
 		<div class='section-header'>
 			Question Options
 		</div>
-			<label 
+		<label 
 			for="<?php echo esc_attr( $this->get_field_id( 'price' ) ); ?>">
 			<?php _e( esc_attr( 'Price: (dollars)' ) ); ?>
 		</label> 
@@ -156,6 +149,18 @@ class Answrly extends WP_Widget {
 			type="number"
 			onkeypress='return event.charCode >= 48 && event.charCode <= 57'
 			value="<?php echo (! empty( $instance['price'] ) ) ? esc_attr( $instance['price'] ) : 25; ?>">
+		<!-- Header -->	
+		<label 
+			for="<?php echo esc_attr( $this->get_field_id( 'header' ) ); ?>">
+			<?php _e( esc_attr( 'header: ' ) ); ?>
+		</label> 
+		<input 
+			class="widefat" 
+			id="<?php echo esc_attr( $this->get_field_id( 'header' ) ); ?>"
+			name="<?php echo esc_attr( $this->get_field_name( 'header' ) ); ?>"
+			type="text"
+			value="<?php echo (! empty( $instance['widget_title'] ) ) ? esc_attr( $instance['widget_title'] ) : 
+				"Ask me a question" ?>" />
 		<?php
 	}
 }
@@ -182,6 +187,23 @@ function curl($url, $data){
 	curl_close($curl);
 	return $resp;
 }
+
+function display_error($err){ ?>
+	<script type='text/javascript'>
+		document.getElementById ("error-message"). innerHTML = "<?php echo $err; ?>";
+	</script><?php 
+}
+		
+function display($str) {
+	preg_match('#[-a-zA-Z0-9@:%_\+.~\#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~\#?&//=]*)?#si', $str, $matches);
+	if (!filter_var($matches[0], FILTER_VALIDATE_URL) === false) {?>
+	    <script>
+	    	window.location.replace("<?php echo $matches[0]; ?>");
+	    </script> <?php
+	} else { 
+		display_error($str);
+	}
+ }
 
 function myplugin_register_widgets() {
 	register_widget( 'Answrly' );

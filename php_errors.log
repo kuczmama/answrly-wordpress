@@ -412,3 +412,9 @@
 [22-Jul-2016 03:31:36 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
 [22-Jul-2016 03:31:36 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
 [22-Jul-2016 03:31:36 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[28-Jul-2016 19:22:23 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 58
+[28-Jul-2016 19:22:23 UTC] PHP Stack trace:
+[28-Jul-2016 19:22:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[28-Jul-2016 19:22:23 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[28-Jul-2016 19:22:23 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[28-Jul-2016 19:22:23 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
