@@ -418,3 +418,280 @@
 [28-Jul-2016 19:22:23 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
 [28-Jul-2016 19:22:23 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
 [28-Jul-2016 19:22:23 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[28-Jul-2016 22:01:42 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 166
+[28-Jul-2016 22:01:42 UTC] PHP Stack trace:
+[28-Jul-2016 22:01:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[28-Jul-2016 22:01:42 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[28-Jul-2016 22:01:42 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[28-Jul-2016 22:01:42 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[28-Jul-2016 22:03:41 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 166
+[28-Jul-2016 22:03:41 UTC] PHP Stack trace:
+[28-Jul-2016 22:03:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[28-Jul-2016 22:03:41 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[28-Jul-2016 22:03:41 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[28-Jul-2016 22:03:41 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[28-Jul-2016 22:08:41 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[28-Jul-2016 22:08:41 UTC] PHP Stack trace:
+[28-Jul-2016 22:08:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[28-Jul-2016 22:08:41 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[28-Jul-2016 22:08:41 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[28-Jul-2016 22:08:41 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[28-Jul-2016 22:10:41 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[28-Jul-2016 22:10:41 UTC] PHP Stack trace:
+[28-Jul-2016 22:10:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[28-Jul-2016 22:10:41 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[28-Jul-2016 22:10:41 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[28-Jul-2016 22:10:41 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[28-Jul-2016 22:14:41 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 181
+[28-Jul-2016 22:14:41 UTC] PHP Stack trace:
+[28-Jul-2016 22:14:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[28-Jul-2016 22:14:41 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[28-Jul-2016 22:14:41 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[28-Jul-2016 22:14:41 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[28-Jul-2016 22:20:51 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 166
+[28-Jul-2016 22:20:51 UTC] PHP Stack trace:
+[28-Jul-2016 22:20:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[28-Jul-2016 22:20:51 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[28-Jul-2016 22:20:51 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[28-Jul-2016 22:20:51 UTC] PHP   4. wp_ajax_save_widget() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[28-Jul-2016 22:20:51 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1935}() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1935
+[28-Jul-2016 22:20:51 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1935
+[28-Jul-2016 22:20:51 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:20:51 UTC] PHP   8. form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:20:59 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 166
+[28-Jul-2016 22:20:59 UTC] PHP Stack trace:
+[28-Jul-2016 22:20:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:20:59 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:20:59 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:20:59 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:20:59 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:20:59 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:20:59 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:20:59 UTC] PHP   8. form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:21:11 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 166
+[28-Jul-2016 22:21:11 UTC] PHP Stack trace:
+[28-Jul-2016 22:21:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:21:11 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:21:11 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:21:11 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:21:11 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:21:11 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:21:11 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:21:11 UTC] PHP   8. form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:21:14 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 166
+[28-Jul-2016 22:21:14 UTC] PHP Stack trace:
+[28-Jul-2016 22:21:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:21:14 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:21:14 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:21:14 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:21:14 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:21:14 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:21:14 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:21:14 UTC] PHP   8. form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:22:42 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 177
+[28-Jul-2016 22:22:42 UTC] PHP Stack trace:
+[28-Jul-2016 22:22:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:22:42 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:22:42 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:22:42 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:22:42 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:22:42 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:22:42 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:22:42 UTC] PHP   8. form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:38:30 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 22:38:30 UTC] PHP Stack trace:
+[28-Jul-2016 22:38:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:38:30 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:38:30 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:38:30 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:38:30 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:38:30 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:38:30 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:38:30 UTC] PHP   8. form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:38:38 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 22:38:38 UTC] PHP Stack trace:
+[28-Jul-2016 22:38:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:38:38 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:38:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:38:38 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:38:38 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:38:38 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:38:38 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:38:38 UTC] PHP   8. form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:41:26 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 22:41:26 UTC] PHP Stack trace:
+[28-Jul-2016 22:41:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:41:26 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:41:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:41:26 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:41:26 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:41:26 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:41:26 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:41:26 UTC] PHP   8. form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:41:38 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 22:41:38 UTC] PHP Stack trace:
+[28-Jul-2016 22:41:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:41:38 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:41:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:41:38 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:41:38 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:41:38 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:41:38 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:41:38 UTC] PHP   8. form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:42:25 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 22:42:25 UTC] PHP Stack trace:
+[28-Jul-2016 22:42:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:42:25 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:42:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:42:25 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:42:25 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:42:25 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:42:25 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:42:25 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:50:06 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 22:50:06 UTC] PHP Stack trace:
+[28-Jul-2016 22:50:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:50:06 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:50:06 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:50:06 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:50:06 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:50:06 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:50:06 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:50:06 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:51:31 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 22:51:31 UTC] PHP Stack trace:
+[28-Jul-2016 22:51:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:51:31 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:51:31 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:51:31 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:51:31 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:51:31 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:51:31 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:51:31 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:54:50 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 22:54:50 UTC] PHP Stack trace:
+[28-Jul-2016 22:54:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:54:50 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:54:50 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:54:50 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:54:50 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:54:50 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:54:50 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:54:50 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 22:55:04 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 22:55:04 UTC] PHP Stack trace:
+[28-Jul-2016 22:55:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 22:55:04 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 22:55:04 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:55:04 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 22:55:04 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:55:04 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 22:55:04 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 22:55:04 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 23:06:30 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 23:06:30 UTC] PHP Stack trace:
+[28-Jul-2016 23:06:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[28-Jul-2016 23:06:30 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[28-Jul-2016 23:06:30 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[28-Jul-2016 23:06:30 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[28-Jul-2016 23:08:04 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 23:08:04 UTC] PHP Stack trace:
+[28-Jul-2016 23:08:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 23:08:04 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 23:08:04 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:08:04 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:08:04 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:08:04 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:08:04 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 23:08:04 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 23:08:25 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 23:08:25 UTC] PHP Stack trace:
+[28-Jul-2016 23:08:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 23:08:25 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 23:08:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:08:25 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:08:25 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:08:25 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:08:25 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 23:08:25 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 23:08:55 UTC] PHP Fatal error:  Call to undefined function get_field_id() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 23:08:55 UTC] PHP Stack trace:
+[28-Jul-2016 23:08:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 23:08:55 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 23:08:55 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:08:55 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:08:55 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:08:55 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:08:55 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 23:08:55 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 23:09:16 UTC] PHP Fatal error:  Call to undefined function get_field_id() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 178
+[28-Jul-2016 23:09:16 UTC] PHP Stack trace:
+[28-Jul-2016 23:09:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 23:09:16 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 23:09:16 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:09:16 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:09:16 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:09:16 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:09:16 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 23:09:16 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 23:09:33 UTC] PHP Fatal error:  Call to undefined function get_field_id() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 177
+[28-Jul-2016 23:09:33 UTC] PHP Stack trace:
+[28-Jul-2016 23:09:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 23:09:33 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 23:09:33 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:09:33 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:09:33 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:09:33 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:09:33 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 23:09:33 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 23:10:41 UTC] PHP Fatal error:  Call to undefined function get_field_id() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 177
+[28-Jul-2016 23:10:41 UTC] PHP Stack trace:
+[28-Jul-2016 23:10:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 23:10:41 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 23:10:41 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:10:41 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:10:41 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:10:41 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:10:41 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 23:10:41 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 23:12:27 UTC] PHP Parse error:  syntax error, unexpected 'onkeypress' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 183
+[28-Jul-2016 23:12:27 UTC] PHP Stack trace:
+[28-Jul-2016 23:12:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[28-Jul-2016 23:12:27 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[28-Jul-2016 23:12:27 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[28-Jul-2016 23:12:27 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[28-Jul-2016 23:14:27 UTC] PHP Parse error:  syntax error, unexpected 'onkeypress' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 183
+[28-Jul-2016 23:14:27 UTC] PHP Stack trace:
+[28-Jul-2016 23:14:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[28-Jul-2016 23:14:27 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[28-Jul-2016 23:14:27 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[28-Jul-2016 23:14:27 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[28-Jul-2016 23:15:25 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-includes/class-wp-widget.php on line 220
+[28-Jul-2016 23:15:25 UTC] PHP Stack trace:
+[28-Jul-2016 23:15:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 23:15:25 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 23:15:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:15:25 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:15:25 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:15:25 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:15:25 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 23:15:25 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 23:15:25 UTC] PHP   9. WP_Widget::get_field_id() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:177
+[28-Jul-2016 23:15:50 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/wp-includes/class-wp-widget.php on line 220
+[28-Jul-2016 23:15:50 UTC] PHP Stack trace:
+[28-Jul-2016 23:15:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[28-Jul-2016 23:15:50 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[28-Jul-2016 23:15:50 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:15:50 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[28-Jul-2016 23:15:50 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:15:50 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[28-Jul-2016 23:15:50 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[28-Jul-2016 23:15:50 UTC] PHP   8. get_form_field() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:114
+[28-Jul-2016 23:15:50 UTC] PHP   9. WP_Widget::get_field_id() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:177
+[31-Jul-2016 16:45:59 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 147
+[31-Jul-2016 16:45:59 UTC] PHP Stack trace:
+[31-Jul-2016 16:45:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[31-Jul-2016 16:45:59 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/widgets.php:10
+[31-Jul-2016 16:45:59 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[31-Jul-2016 16:45:59 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[31-Jul-2016 16:45:59 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92

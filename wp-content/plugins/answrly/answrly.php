@@ -10,7 +10,7 @@
 ?>
 <style type="text/css">
 	.section-header{
-		text-align: center;
+		text-align: left;
 		font-weight: 900;
 	}
 	
@@ -29,6 +29,9 @@
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.section {
+		margin-top: 1em;
 	}
 </style>
  
@@ -98,72 +101,85 @@ class Answrly extends WP_Widget {
 	}
 
 	function form( $instance ) {
-		//Title
-		?>
-		<div class="section-header">
-			Answrly.com Account Info
-		</div>
-		<div class="error-message">
-			<?php echo !is_json($instance['json']) ? $instance['json'] : ''; ?>
-		</div>
-		<?php
-		// Username
 		$username = ! empty( $instance['username'] ) ? $instance['username'] : '';
-		?>
-		<label 
-			for="<?php echo esc_attr( $this->get_field_id( 'username' ) ); ?>">
-			<?php _e( esc_attr( 'Username:')) ?>
-		</label> 
-		<input 
-			class="widefat" 
-			id="<?php echo esc_attr( $this->get_field_id( 'username' ) ); ?>"
-			name="<?php echo esc_attr( $this->get_field_name( 'username' ) ); ?>"
-			type="text"
-			value="<?php echo esc_attr( $username ); ?>">
-		<?php
-		//Password
 		$password = ! empty( $instance['password'] ) ? $instance['password'] : '';
+		$price = ! empty( $instance['price'] ) ? $instance['price'] : '25';
+		$widget_title = ! empty( $instance['widget_title'] ) ? $instance['widget_title'] : 'Ask me a question';
 		?>
-		<label 
-			for="<?php echo esc_attr( $this->get_field_id( 'password' ) ); ?>">
-			<?php _e( esc_attr( 'Password:' ) ); ?>
-		</label> 
-		<input 
-			class="widefat" 
-			id="<?php echo esc_attr( $this->get_field_id( 'password' ) ); ?>"
-			name="<?php echo esc_attr( $this->get_field_name( 'password' ) ); ?>"
-			type="password" 
-			value="<?php echo esc_attr( $password ); ?>">
-			<!-- Option -->
-		<div class='section-header'>
-			Question Options
+		<div class='section'>
+			<div class="section-header">
+				Answrly.com Account Info <span class='align-right'>New user? <a href='https://www.answrly.com/expert_signup'>Sign up now!</a></span>
+			</div>
+			<div class="error-message">
+				<?php echo !is_json($instance['json']) ? $instance['json'] : ''; ?>
+			</div>
+			
+			<!-- Username -->
+			<label 
+				for="<?php echo esc_attr( $this->get_field_id( 'username' ) ); ?>">
+				<?php _e( esc_attr( 'Username:')) ?>
+			</label> 
+			<input 
+				class="widefat" 
+				id="<?php echo esc_attr( $this->get_field_id( 'username' ) ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'username' ) ); ?>"
+				type="text"
+				placeholder="Username"
+				value="<?php echo esc_attr( $username ); ?>">
+			<!-- /Username -->
+			<label 
+				for="<?php echo esc_attr( $this->get_field_id( 'password' ) ); ?>">
+				<?php _e( esc_attr( 'Password:' ) ); ?>
+			</label>
+			<!-- Password -->
+			<input 
+				class="widefat" 
+				id="<?php echo esc_attr( $this->get_field_id( 'password' ) ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'password' ) ); ?>"
+				type="password" 
+				placeholder="Password"
+				value="<?php echo esc_attr( $password ); ?>">
+			<!-- /Password -->
 		</div>
-		<label 
-			for="<?php echo esc_attr( $this->get_field_id( 'price' ) ); ?>">
-			<?php _e( esc_attr( 'Price: (dollars)' ) ); ?>
-		</label> 
-		<input 
-			class="widefat" 
-			id="<?php echo esc_attr( $this->get_field_id( 'price' ) ); ?>"
-			name="<?php echo esc_attr( $this->get_field_name( 'price' ) ); ?>"
-			type="number"
-			onkeypress='return event.charCode >= 48 && event.charCode <= 57'
-			value="<?php echo (! empty( $instance['price'] ) ) ? esc_attr( $instance['price'] ) : 25; ?>">
-		<!-- Header -->	
-		<label 
-			for="<?php echo esc_attr( $this->get_field_id( 'header' ) ); ?>">
-			<?php _e( esc_attr( 'header: ' ) ); ?>
-		</label> 
-		<input 
-			class="widefat" 
-			id="<?php echo esc_attr( $this->get_field_id( 'header' ) ); ?>"
-			name="<?php echo esc_attr( $this->get_field_name( 'header' ) ); ?>"
-			type="text"
-			value="<?php echo (! empty( $instance['widget_title'] ) ) ? esc_attr( $instance['widget_title'] ) : 
-				"Ask me a question" ?>" />
+		
+		
+		<!-- Option -->
+		<div class='section'>
+			<div class='section-header'>
+				Question Options
+			</div>
+			<!-- Price -->
+			<label 
+				for="<?php echo esc_attr( $this->get_field_id( 'price' ) ); ?>">
+				<?php _e('Price To Charge User: (dollars) '); ?>
+				<a class='align-right' href='https://www.answrly.com/pricing'>(Pricing Details)</a>
+			</label> 
+			<input 
+				class="widefat" 
+				id="<?php echo esc_attr( $this->get_field_id( 'price' ) ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'price' ) ); ?>"
+				type="number"
+				onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+				value="<?php echo esc_attr( $price ); ?>">
+			<!-- /Price -->
+			<!-- Widget Title -->	
+			<label 
+				for="<?php echo esc_attr( $this->get_field_id( 'widget_title' ) ); ?>">
+				<?php _e( esc_attr( 'Title: ' ) ); ?>
+			</label> 
+			<input 
+				class="widefat" 
+				id="<?php echo esc_attr( $this->get_field_id( 'widget_title' ) ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'widget_title' ) ); ?>"
+				type="text"
+				value="<?php echo esc_attr( $widget_title ); ?>" />
+			<!-- /Widget Title -->
+		</div>
 		<?php
 	}
 }
+
+
 function is_json($string,$return_data = false) {
 	$data = json_decode($string);
 	return (json_last_error() == JSON_ERROR_NONE) ?
