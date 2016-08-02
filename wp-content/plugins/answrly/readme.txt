@@ -68,6 +68,7 @@ It costs you nothing to use answrly.  Answrly only takes out a small percentage 
 1. assets/screenshot-1.png
 2. assets/screenshot-2.png
 3. assets/screenshot-3.png
+4. assets/screenshot-4.png
 
 == ChangeLog ==
 No changes have been made... Yet.
