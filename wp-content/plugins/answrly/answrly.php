@@ -60,9 +60,11 @@ class Answrly extends WP_Widget {
 		?>
 		<div id="error-message" class='error-message'><!-- Display the error message --></div>
 		<form method="post" id='question-form'>
-			<textarea form='question-form' name='question' placeholder='Ask a question...' ></textarea>
+			<textarea form='question-form' name='question' placeholder='Type your question here...' ></textarea>
     		<input type="submit" value="Ask" name="submit">
-    		<small>Become an <a href='https://www.answrly.com/expert_signup'>answrly affiliate</a></small>
+    		<?php if($instance['powered_link'] == true){ ?>
+    			<small>Become an <a href='https://www.answrly.com/expert_signup'>answrly affiliate</a></small>
+    		<?php } ?>
 		</form>
 		<?php
 		if(isset($_POST['submit'])) {
@@ -84,6 +86,7 @@ class Answrly extends WP_Widget {
 		$instance['widget_title'] = ( ! empty( $new_instance['widget_title'] ) ) ? strip_tags( $new_instance['widget_title'] ) : '';
 		$instance['password'] = ( ! empty( $new_instance['password'] ) ) ? strip_tags( $new_instance['password'] ) : '';
 		$instance['price'] = ( ! empty( $new_instance['price'] ) ) ? strip_tags( $new_instance['price'] ) : '';
+		$instance['powered_link'] = $new_instance['powered_link'];
 		$data = array(
 			"user[username]"  => $instance['username'],
 			"user[password]" => $instance['password']
@@ -105,6 +108,7 @@ class Answrly extends WP_Widget {
 		$password = ! empty( $instance['password'] ) ? $instance['password'] : '';
 		$price = ! empty( $instance['price'] ) ? $instance['price'] : '25';
 		$widget_title = ! empty( $instance['widget_title'] ) ? $instance['widget_title'] : 'Ask me a question';
+		$powered_link = $instance['powered_link'];
 		?>
 		<div class='section'>
 			<div class="section-header">
@@ -174,6 +178,15 @@ class Answrly extends WP_Widget {
 				type="text"
 				value="<?php echo esc_attr( $widget_title ); ?>" />
 			<!-- /Widget Title -->
+			<!-- Powered by answrly tag -->
+			<input class="checkbox"
+					type="checkbox" <?php checked( $instance[ 'powered_link' ], 'on' ); ?> 
+					id="<?php echo $this->get_field_id( 'powered_link' ); ?>" 
+					name="<?php echo $this->get_field_name( 'powered_link' ); ?>" /> 
+			<label for="<?php echo $this->get_field_id( 'powered_link' ); ?>">
+				<?php _e(esc_attr('Show "Become an answrly affiliate link?"')); ?>
+			</label>
+			<!-- /End powered by answrly tag -->
 		</div>
 		<?php
 	}

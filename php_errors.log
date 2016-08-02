@@ -695,3 +695,72 @@
 [31-Jul-2016 16:45:59 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
 [31-Jul-2016 16:45:59 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
 [31-Jul-2016 16:45:59 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[02-Aug-2016 19:20:01 UTC] PHP Fatal error:  Call to undefined function esc_attribute() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 183
+[02-Aug-2016 19:20:01 UTC] PHP Stack trace:
+[02-Aug-2016 19:20:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[02-Aug-2016 19:20:01 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[02-Aug-2016 19:20:01 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:20:01 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:20:01 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:20:01 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:20:01 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[02-Aug-2016 19:20:46 UTC] PHP Fatal error:  Call to undefined function esc_attribute() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 183
+[02-Aug-2016 19:20:46 UTC] PHP Stack trace:
+[02-Aug-2016 19:20:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[02-Aug-2016 19:20:46 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[02-Aug-2016 19:20:46 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:20:46 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:20:46 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:20:46 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:20:46 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[02-Aug-2016 19:21:03 UTC] PHP Fatal error:  Call to undefined function esc_attribute() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 183
+[02-Aug-2016 19:21:03 UTC] PHP Stack trace:
+[02-Aug-2016 19:21:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[02-Aug-2016 19:21:03 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[02-Aug-2016 19:21:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:21:03 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:21:03 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:21:03 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:21:03 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[02-Aug-2016 19:21:40 UTC] PHP Fatal error:  Call to undefined function esc_attribute() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 183
+[02-Aug-2016 19:21:40 UTC] PHP Stack trace:
+[02-Aug-2016 19:21:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[02-Aug-2016 19:21:40 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[02-Aug-2016 19:21:40 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:21:40 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:21:40 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:21:40 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:21:40 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[02-Aug-2016 19:21:43 UTC] PHP Fatal error:  Call to undefined function esc_attribute() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 183
+[02-Aug-2016 19:21:43 UTC] PHP Stack trace:
+[02-Aug-2016 19:21:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[02-Aug-2016 19:21:43 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[02-Aug-2016 19:21:43 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:21:43 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:21:43 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:21:43 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:21:43 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[02-Aug-2016 19:21:47 UTC] PHP Fatal error:  Call to undefined function esc_attribute() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 183
+[02-Aug-2016 19:21:47 UTC] PHP Stack trace:
+[02-Aug-2016 19:21:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[02-Aug-2016 19:21:47 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[02-Aug-2016 19:21:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:21:47 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:21:47 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:21:47 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:21:47 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[02-Aug-2016 19:22:13 UTC] PHP Fatal error:  Call to undefined function esc_attribute() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 183
+[02-Aug-2016 19:22:13 UTC] PHP Stack trace:
+[02-Aug-2016 19:22:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[02-Aug-2016 19:22:13 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[02-Aug-2016 19:22:13 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:22:13 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[02-Aug-2016 19:22:13 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:22:13 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[02-Aug-2016 19:22:13 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[02-Aug-2016 19:31:48 UTC] PHP Parse error:  syntax error, unexpected 'of' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 183
+[02-Aug-2016 19:31:48 UTC] PHP Stack trace:
+[02-Aug-2016 19:31:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[02-Aug-2016 19:31:48 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[02-Aug-2016 19:31:48 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[02-Aug-2016 19:31:48 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92

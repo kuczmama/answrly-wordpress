@@ -4,7 +4,6 @@ Tags: answrly, answers, answer, question, monetize blog, make money
 Requires at least: 3.0.1
 Tested up to: 3.4
 Stable tag: 4.3
-Donate link: N/A
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,7 +28,7 @@ It doesn't matter whether it is for $1 dollar or $10,000 dollars.  All you need 
 
 **Why Answrly?**
 
-Before answrly there wasn't too many ways you could monetize your website.  There was advertising, affiliate marketing, consulting, selling a product, and not much else. This allows you to help people with little questions not big enough for a full time consulting gig.    Now, you can sell your expertise and charge customers for just one question or piece of advice.
+Before answrly there wasn't too many ways you could monetize your website.  There was advertising, affiliate marketing, consulting, selling a product, and not much else. This allows you to help people with questions not big enough for a full time consulting gig.    Now, you can sell your expertise and charge customers for just one question or piece of advice.
 
 
 **Pricing**
@@ -40,7 +39,7 @@ Answrly will only charge 80 cents + 16% (<a href='https://www.answrly.com/pricin
 
 To get started:
 
-1. Click the "Activate" link to the left of this description
+1. Click the "Activate" link
 2. Sign up as an expert at <a href="https://www.answrly.com/expert_signup">answrly.com</a>
 3. Answrly will appear as an available widget
 4. Place Answrly Widget at desired location ie. Sidebar, Content Bottom, etc.
@@ -66,11 +65,9 @@ It costs you nothing to use answrly.  Answrly only takes out a small percentage 
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets 
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` 
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. assets/screenshot-1.png
+2. assets/screenshot-2.png
+3. assets/screenshot-3.png
 
 == ChangeLog ==
 No changes have been made... Yet.
