@@ -2,7 +2,7 @@
     /*
     Plugin Name: Answrly
     Plugin URI: https://www.answrly.com
-    Description: Are you really good at something?  Car Repair? Medical Stuff? Investment Guru? Do all your users want to give you money for your advice? The answrly plugin allows you to easily <strong>answer your user's questions for money</strong>.  To get started: 1) Click the "Activate" link to the left of this description, 2) Sign up as an expert at <a href="https://www.answrly.com/expert_signup">answrly.com</a> 3) Go to your answrly configuration page, and login with your account information.
+    Description: The answrly plugin allows you to easily <strong>answer your user's questions for money</strong>.  To get started: 1) Click the "Activate" link to the left of this description, 2) Sign up as an expert at <a href="https://www.answrly.com/expert_signup">answrly.com</a> 3) Answrly will appear as an available widget.  4) Place Answrly Widget at desired location ie. Sidebar, Content Bottom, etc.  5)  In the Answrly Widget settings enter your answrly username and password to link your acount to wordpress  6) Customize Widget Options if desired 7) You're ready to start making money with your blog
     Author: Mark Kuczmarski
     Version: 1.0
     Author URI: https://www.answrly.com
@@ -165,7 +165,7 @@ class Answrly extends WP_Widget {
 			<!-- Widget Title -->	
 			<label 
 				for="<?php echo esc_attr( $this->get_field_id( 'widget_title' ) ); ?>">
-				<?php _e( esc_attr( 'Title: ' ) ); ?>
+				<?php _e( esc_attr( 'Widget Title: ' ) ); ?>
 			</label> 
 			<input 
 				class="widefat" 
