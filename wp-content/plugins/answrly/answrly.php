@@ -8,7 +8,11 @@
     Author URI: https://www.answrly.com
 */
 ?>
-<style type="text/css">
+ 
+ <?php
+class Answrly extends WP_Widget {
+	?>
+	<style type="text/css">
 	.section-header{
 		text-align: left;
 		font-weight: 900;
@@ -34,11 +38,7 @@
 		margin-top: 1em;
 	}
 </style>
- 
- 
- <?php
-class Answrly extends WP_Widget {
-
+	<?php
 	function __construct() {
 		// Instantiate the parent object
 		$widget_ops = array( 
