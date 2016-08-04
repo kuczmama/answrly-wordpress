@@ -764,3 +764,163 @@
 [02-Aug-2016 19:31:48 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
 [02-Aug-2016 19:31:48 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
 [02-Aug-2016 19:31:48 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 17:30:33 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 14
+[04-Aug-2016 17:30:33 UTC] PHP Stack trace:
+[04-Aug-2016 17:30:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 17:30:33 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 17:30:33 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 17:30:33 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 17:30:36 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 14
+[04-Aug-2016 17:30:36 UTC] PHP Stack trace:
+[04-Aug-2016 17:30:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[04-Aug-2016 17:30:36 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/widgets.php:10
+[04-Aug-2016 17:30:36 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[04-Aug-2016 17:30:36 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 17:30:36 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 17:30:48 UTC] PHP Parse error:  syntax error, unexpected '<', expecting function (T_FUNCTION) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 15
+[04-Aug-2016 17:30:48 UTC] PHP Stack trace:
+[04-Aug-2016 17:30:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[04-Aug-2016 17:30:48 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/widgets.php:10
+[04-Aug-2016 17:30:48 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[04-Aug-2016 17:30:48 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 17:30:48 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 17:35:39 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 14
+[04-Aug-2016 17:35:39 UTC] PHP Stack trace:
+[04-Aug-2016 17:35:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[04-Aug-2016 17:35:39 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/widgets.php:10
+[04-Aug-2016 17:35:39 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[04-Aug-2016 17:35:39 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 17:35:39 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 18:32:51 UTC] PHP Fatal error:  Call to undefined function escape_url() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 140
+[04-Aug-2016 18:32:51 UTC] PHP Stack trace:
+[04-Aug-2016 18:32:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[04-Aug-2016 18:32:51 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[04-Aug-2016 18:32:51 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[04-Aug-2016 18:32:51 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[04-Aug-2016 18:32:51 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[04-Aug-2016 18:32:51 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[04-Aug-2016 18:32:51 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[04-Aug-2016 18:37:32 UTC] PHP Fatal error:  Call to undefined function escape_url() in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 140
+[04-Aug-2016 18:37:32 UTC] PHP Stack trace:
+[04-Aug-2016 18:37:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[04-Aug-2016 18:37:32 UTC] PHP   2. wp_list_widgets() /home/ubuntu/workspace/wp-admin/widgets.php:393
+[04-Aug-2016 18:37:32 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:48}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[04-Aug-2016 18:37:32 UTC] PHP   4. wp_widget_control() /home/ubuntu/workspace/wp-admin/includes/widgets.php:48
+[04-Aug-2016 18:37:32 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/widgets.php:237}() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[04-Aug-2016 18:37:32 UTC] PHP   6. WP_Widget->form_callback() /home/ubuntu/workspace/wp-admin/includes/widgets.php:237
+[04-Aug-2016 18:37:32 UTC] PHP   7. Answrly->form() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:513
+[04-Aug-2016 18:50:28 UTC] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 52
+[04-Aug-2016 18:50:28 UTC] PHP Stack trace:
+[04-Aug-2016 18:50:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 18:50:28 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 18:50:28 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 18:50:28 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 18:51:28 UTC] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 52
+[04-Aug-2016 18:51:28 UTC] PHP Stack trace:
+[04-Aug-2016 18:51:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 18:51:28 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 18:51:28 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 18:51:28 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 18:52:29 UTC] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 52
+[04-Aug-2016 18:52:29 UTC] PHP Stack trace:
+[04-Aug-2016 18:52:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 18:52:29 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 18:52:29 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 18:52:29 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 18:52:51 UTC] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 52
+[04-Aug-2016 18:52:51 UTC] PHP Stack trace:
+[04-Aug-2016 18:52:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[04-Aug-2016 18:52:51 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/widgets.php:10
+[04-Aug-2016 18:52:51 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[04-Aug-2016 18:52:51 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 18:52:51 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:08:25 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:08:25 UTC] PHP Stack trace:
+[04-Aug-2016 19:08:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:08:25 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:08:25 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:08:25 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:09:25 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:09:25 UTC] PHP Stack trace:
+[04-Aug-2016 19:09:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:09:25 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:09:25 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:09:25 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:11:26 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:11:26 UTC] PHP Stack trace:
+[04-Aug-2016 19:11:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:11:26 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:11:26 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:11:26 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:13:27 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:13:27 UTC] PHP Stack trace:
+[04-Aug-2016 19:13:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:13:27 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:13:27 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:13:27 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:15:27 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:15:27 UTC] PHP Stack trace:
+[04-Aug-2016 19:15:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:15:27 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:15:27 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:15:27 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:17:28 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:17:28 UTC] PHP Stack trace:
+[04-Aug-2016 19:17:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:17:28 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:17:28 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:17:28 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:19:45 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:19:45 UTC] PHP Stack trace:
+[04-Aug-2016 19:19:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:19:45 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:19:45 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:19:45 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:20:46 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:20:46 UTC] PHP Stack trace:
+[04-Aug-2016 19:20:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:20:46 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:20:46 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:20:46 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:21:46 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:21:46 UTC] PHP Stack trace:
+[04-Aug-2016 19:21:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:21:46 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:21:46 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:21:46 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:23:46 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:23:46 UTC] PHP Stack trace:
+[04-Aug-2016 19:23:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:23:46 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:23:46 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:23:46 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:25:46 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:25:46 UTC] PHP Stack trace:
+[04-Aug-2016 19:25:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:25:46 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:25:46 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:25:46 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:27:46 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:27:46 UTC] PHP Stack trace:
+[04-Aug-2016 19:27:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:27:46 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:27:46 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:27:46 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:29:46 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:29:46 UTC] PHP Stack trace:
+[04-Aug-2016 19:29:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:29:46 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:29:46 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:29:46 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:42:56 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:42:56 UTC] PHP Stack trace:
+[04-Aug-2016 19:42:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:42:56 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:42:56 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:42:56 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 19:43:56 UTC] PHP Parse error:  syntax error, unexpected 'Become' (T_STRING) in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 175
+[04-Aug-2016 19:43:56 UTC] PHP Stack trace:
+[04-Aug-2016 19:43:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 19:43:56 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 19:43:56 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 19:43:56 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
