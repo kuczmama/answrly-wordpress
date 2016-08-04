@@ -74,7 +74,7 @@ class Answrly extends WP_Widget {
 				"question[expert_id]" => $instance['expert_id'],
 				"question[price]" => ((int)$instance['price'] * 100)
 			);
-			display(curl('https://www.answrly.com/questions', $data));
+			answrly_display(answrly_curl('https://www.answrly.com/questions', $data));
 		}
 		echo $args['after_widget'];
 	}
@@ -91,9 +91,9 @@ class Answrly extends WP_Widget {
 			"user[username]"  => $instance['username'],
 			"user[password]" => $instance['password']
 		);
-		$instance['json'] = curl('https://www.answrly.com/get_user', $data);
+		$instance['json'] = answrly_curl('https://www.answrly.com/get_user', $data);
 		
-		if(is_json($instance['json'], FALSE)) {
+		if(answrly_is_json($instance['json'], FALSE)) {
 			$json = json_decode($instance['json']);
 			$instance['expert_id'] = $json->{'id'};
 			$instance['username'] = $json->{'username'};
@@ -115,7 +115,7 @@ class Answrly extends WP_Widget {
 				Answrly.com Account Info <span class='align-right'>New user? <a href='https://www.answrly.com/expert_signup'>Sign up now!</a></span>
 			</div>
 			<div class="error-message">
-				<?php echo !is_json($instance['json']) ? $instance['json'] : ''; ?>
+				<?php echo !answrly_is_json($instance['json']) ? $instance['json'] : ''; ?>
 			</div>
 			
 			<!-- Username -->
@@ -193,14 +193,14 @@ class Answrly extends WP_Widget {
 }
 
 
-function is_json($string,$return_data = false) {
+function answrly_is_json($string,$return_data = false) {
 	$data = json_decode($string);
 	return (json_last_error() == JSON_ERROR_NONE) ?
 		($return_data ?
 			$data : TRUE) : FALSE;
 }
 
-function curl($url, $data){
+function answrly_curl($url, $data){
 	// Get cURL resource
 	$curl = curl_init();
 	// Set some options - we are passing in a useragent too here
@@ -217,27 +217,27 @@ function curl($url, $data){
 	return $resp;
 }
 
-function display_error($err){ ?>
+function answrly_display_error($err){ ?>
 	<script type='text/javascript'>
 		document.getElementById ("error-message"). innerHTML = "<?php echo $err; ?>";
 	</script><?php 
 }
 		
-function display($str) {
+function answrly_display($str) {
 	preg_match('#[-a-zA-Z0-9@:%_\+.~\#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~\#?&//=]*)?#si', $str, $matches);
 	if (!filter_var($matches[0], FILTER_VALIDATE_URL) === false) {?>
 	    <script>
 	    	window.location.replace("<?php echo $matches[0]; ?>");
 	    </script> <?php
 	} else { 
-		display_error($str);
+		answrly_display_error($str);
 	}
  }
 
-function myplugin_register_widgets() {
+function answrly_register_widgets() {
 	register_widget( 'Answrly' );
 }
 
-add_action( 'widgets_init', 'myplugin_register_widgets' );
+add_action( 'widgets_init', 'answrly_register_widgets' );
 
  ?>
