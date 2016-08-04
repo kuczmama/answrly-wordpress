@@ -924,3 +924,65 @@
 [04-Aug-2016 19:43:56 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
 [04-Aug-2016 19:43:56 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
 [04-Aug-2016 19:43:56 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 20:00:25 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ')' in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 57
+[04-Aug-2016 20:00:25 UTC] PHP Stack trace:
+[04-Aug-2016 20:00:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 20:00:25 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 20:00:25 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 20:00:25 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[04-Aug-2016 20:22:15 UTC] PHP Warning:  filter_var() expects parameter 2 to be long, string given in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 71
+[04-Aug-2016 20:22:15 UTC] PHP Stack trace:
+[04-Aug-2016 20:22:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 20:22:15 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[04-Aug-2016 20:22:15 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[04-Aug-2016 20:22:15 UTC] PHP   4. wp_ajax_save_widget() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[04-Aug-2016 20:22:15 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918}() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918
+[04-Aug-2016 20:22:15 UTC] PHP   6. WP_Widget->update_callback() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918
+[04-Aug-2016 20:22:15 UTC] PHP   7. Answrly->update() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:437
+[04-Aug-2016 20:22:15 UTC] PHP   8. filter_var() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:71
+[04-Aug-2016 20:22:17 UTC] PHP Warning:  filter_var() expects parameter 2 to be long, string given in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 71
+[04-Aug-2016 20:22:17 UTC] PHP Stack trace:
+[04-Aug-2016 20:22:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 20:22:17 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[04-Aug-2016 20:22:17 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[04-Aug-2016 20:22:17 UTC] PHP   4. wp_ajax_save_widget() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[04-Aug-2016 20:22:17 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918}() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918
+[04-Aug-2016 20:22:17 UTC] PHP   6. WP_Widget->update_callback() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918
+[04-Aug-2016 20:22:17 UTC] PHP   7. Answrly->update() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:437
+[04-Aug-2016 20:22:17 UTC] PHP   8. filter_var() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:71
+[04-Aug-2016 20:22:29 UTC] PHP Warning:  filter_var() expects parameter 2 to be long, string given in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 71
+[04-Aug-2016 20:22:29 UTC] PHP Stack trace:
+[04-Aug-2016 20:22:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 20:22:29 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[04-Aug-2016 20:22:29 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[04-Aug-2016 20:22:29 UTC] PHP   4. wp_ajax_save_widget() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[04-Aug-2016 20:22:29 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918}() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918
+[04-Aug-2016 20:22:29 UTC] PHP   6. WP_Widget->update_callback() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918
+[04-Aug-2016 20:22:29 UTC] PHP   7. Answrly->update() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:437
+[04-Aug-2016 20:22:29 UTC] PHP   8. filter_var() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:71
+[04-Aug-2016 20:23:23 UTC] PHP Warning:  filter_var() expects parameter 2 to be long, string given in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 71
+[04-Aug-2016 20:23:23 UTC] PHP Stack trace:
+[04-Aug-2016 20:23:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 20:23:23 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[04-Aug-2016 20:23:23 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[04-Aug-2016 20:23:23 UTC] PHP   4. wp_ajax_save_widget() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[04-Aug-2016 20:23:23 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918}() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918
+[04-Aug-2016 20:23:23 UTC] PHP   6. WP_Widget->update_callback() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918
+[04-Aug-2016 20:23:23 UTC] PHP   7. Answrly->update() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:437
+[04-Aug-2016 20:23:23 UTC] PHP   8. filter_var() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:71
+[04-Aug-2016 20:23:25 UTC] PHP Warning:  filter_var() expects parameter 2 to be long, string given in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 71
+[04-Aug-2016 20:23:25 UTC] PHP Stack trace:
+[04-Aug-2016 20:23:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 20:23:25 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[04-Aug-2016 20:23:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[04-Aug-2016 20:23:25 UTC] PHP   4. wp_ajax_save_widget() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[04-Aug-2016 20:23:25 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918}() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918
+[04-Aug-2016 20:23:25 UTC] PHP   6. WP_Widget->update_callback() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:1918
+[04-Aug-2016 20:23:25 UTC] PHP   7. Answrly->update() /home/ubuntu/workspace/wp-includes/class-wp-widget.php:437
+[04-Aug-2016 20:23:25 UTC] PHP   8. filter_var() /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php:71
+[04-Aug-2016 21:14:37 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/wp-content/plugins/answrly/answrly.php on line 172
+[04-Aug-2016 21:14:37 UTC] PHP Stack trace:
+[04-Aug-2016 21:14:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[04-Aug-2016 21:14:37 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[04-Aug-2016 21:14:37 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[04-Aug-2016 21:14:37 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92

@@ -67,8 +67,8 @@ class Answrly extends WP_Widget {
 		$instance["username"] = ( ! empty( $new_instance["username"] ) ) ? sanitize_text_field( $new_instance["username"] ) : "";
 		$instance["widget_title"] = ( ! empty( $new_instance["widget_title"] ) ) ? sanitize_text_field( $new_instance["widget_title"] ) : "";
 		$instance["password"] = ( ! empty( $new_instance["password"] ) ) ? sanitize_text_field( $new_instance["password"] ) : "";
-		$instance["price"] = ( ! empty( $new_instance["price"] ) ) ? sanitize_text_field( $new_instance["price"] ) : "";
-		$instance["powered_link"] = $new_instance["powered_link"];
+		$instance["price"] = ( ! empty( filter_var($new_instance["price"], FILTER_VALIDATE_INT))) ? sanitize_text_field( $new_instance["price"] ) : "";
+		$instance["powered_link"] = sanitize_text_field($new_instance["powered_link"]) == "on";
 		$data = array(
 			"user[username]"  => $instance["username"],
 			"user[password]" => $instance["password"]
@@ -77,8 +77,8 @@ class Answrly extends WP_Widget {
 		
 		if(answrly_is_json($instance["json"], FALSE)) {
 			$json = json_decode($instance["json"]);
-			$instance["expert_id"] = $json->{"id"};
-			$instance["username"] = $json->{"username"};
+			$instance["expert_id"] = sanitize_text_field($json->{"id"});
+			$instance["username"] = sanitize_text_field($json->{"username"});
 
 		}
 		
@@ -168,7 +168,8 @@ class Answrly extends WP_Widget {
 			<!-- /Widget Title -->
 			<!-- Powered by answrly tag -->
 			<input class="checkbox"
-					type="checkbox" <?php echo esc_attr(checked( $instance[ "powered_link" ], "on" )); ?> 
+					type="checkbox"
+					<?php if(esc_attr($powered_link)){ echo "checked" ;} ?>
 					id="<?php echo esc_attr($this->get_field_id( "powered_link" )); ?>" 
 					name="<?php echo esc_attr($this->get_field_name( "powered_link" )); ?>" /> 
 			<label for="<?php echo esc_attr($this->get_field_id( "powered_link" )); ?>">
@@ -182,7 +183,7 @@ class Answrly extends WP_Widget {
 }
 
 
-function answrly_is_json($string,$return_data = false) {
+function answrly_is_json($string, $return_data = false) {
 	$data = json_decode($string);
 	return (json_last_error() == JSON_ERROR_NONE) ?
 		($return_data ?
